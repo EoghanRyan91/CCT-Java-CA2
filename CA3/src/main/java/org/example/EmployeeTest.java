@@ -2,7 +2,13 @@ package org.example;
 
 import org.example.Employee;
 
+// Task B Of Part 1
+
 public class EmployeeTest {
+
+    // Link to Repo
+
+//    https://github.com/EoghanRyan91/CCT-Java-CA2
 
     public static void main(String[] args) {
         // Create 3 Employee objects with the specified details
@@ -18,7 +24,21 @@ public class EmployeeTest {
         projectGroup[1] = annBanana;
         projectGroup[2] = tomThumb;
 
-        // Print out the value of variable nextEmpNum to the terminal window
-        System.out.println("Value of nextEmpNum: " + Employee.getNextEmpNum());
+        // Set the value for variable m
+        int m = 2; // Replace this with the desired value
+
+        // Task C of Part 1
+
+        // Search and display names of employees with empNum above m
+        System.out.println("Employees with empNum above " + m + ":");
+        for (Employee employee : projectGroup) {
+            if (employee.getEmpNum() > m) {
+                System.out.println(employee.getName());
+
+                // Print out the value of variable nextEmpNum to the terminal window
+                System.out.println("Value of nextEmpNum: " + Employee.getNextEmpNum());
+            }
+        }
+
     }
 }

@@ -1,5 +1,7 @@
 package org.example;
 
+// Task A of Part 1
+
 public class Employee {
     private String name;
     private String email;
