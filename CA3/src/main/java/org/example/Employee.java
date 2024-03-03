@@ -7,15 +7,38 @@ public class Employee {
     private String email;
     private int empNum;
 
+    // Fields for manager
+    private String username;
+    private String password;
+
     // Static field
     private static int nextEmpNum = 1;
 
     // Constructors
+
     // Constructor with default values
     public Employee() {
         this.name = "DefaultName";
         this.email = "default@email.com";
         this.empNum = nextEmpNum++;
+    }
+
+    // Getter and setter for username
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    // Getter and setter for password
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     // Constructor with parameters
